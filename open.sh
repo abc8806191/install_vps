@@ -1,7 +1,7 @@
 sudo apt update -y
 print("APT更新完畢")
-sudo apt install python3
-sudo apt install python3-pip
+sudo apt install python3 -y
+sudo apt install python3-pip -y
 print("Python必備套件安裝成功")
 clear
 print("==============================")
@@ -21,7 +21,7 @@ pip3 install asyncio
 pip3 install humanize
 pip3 install paramiko
 pip3 install hyper
-sudo apt install speedtest-cli
+sudo apt install speedtest-cli -y
 pip3 install twder
 pip3 install html5lib
 pip3 install httplib2
