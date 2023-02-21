@@ -60,6 +60,9 @@ echo "====================="
 
 mv sshd_config /etc/ssh/
 sudo ufw enable
+sudo ufw allow 888
+sudo ufw allow 54088
+sudo ufw allow 9588
 sudo ufw deny out 22
 
 
