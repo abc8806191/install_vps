@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt update -y
+echo "apt資源更新成功"
 sudo apt install python3 -y
 sudo apt install python3-pip -y
 echo "Python必備套件安裝成功"
@@ -43,7 +44,7 @@ echo "=============================="
 mv connection.py /usr/local/lib/python3.10/dist-packages/hyper/http11
 mv headers.py /usr/local/lib/python3.10/dist-packages/hyper/common
 mv null.py /usr/local/lib/python3.10/dist-packages/
-echo"=============================="
-echo"環境修復完畢 將自動重新啟動系統"
-echo"=============================="
-sudo reboot
+echo "=============================="
+echo "環境修復完畢"
+echo "請自行輸入 sudo reboot 進行重開"
+echo "=============================="
