@@ -76,6 +76,7 @@ echo "=============================="
 mv connection.py /usr/local/lib/python3.10/dist-packages/hyper/http11
 mv headers.py /usr/local/lib/python3.10/dist-packages/hyper/common
 mv null.py /usr/local/lib/python3.10/dist-packages/
+mv flags.py /usr/local/lib/python3.10/dist-packages/hyperframe
 echo "=============================="
 echo "環境修復完畢"
 echo "請自行輸入 sudo reboot 進行重開"
