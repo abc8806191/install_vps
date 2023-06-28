@@ -46,7 +46,7 @@ echo "正在安裝中文化選單"
 echo "====================="
 
 sudo apt-get install language-pack-zh-hans -y
-locale-gen zh_CN.UTF-8
+locale-gen zh_TW.UTF-8
 mv locale /etc/default/
 
 echo "====================="
