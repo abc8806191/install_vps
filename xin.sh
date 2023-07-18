@@ -45,8 +45,8 @@ echo "====================="
 echo "正在安裝中文化介面"
 echo "====================="
 
-sudo apt-get install language-pack-zh-hans -y
-locale-gen zh_CN.UTF-8
+sudo apt-get install language-pack-zh-hant -y
+locale-gen zh_TW.UTF-8
 mv locale /etc/default/
 
 echo "====================="
@@ -65,5 +65,3 @@ echo "=============================="
 echo "環境修復完畢"
 echo "請自行輸入 sudo reboot 進行重開"
 echo "=============================="
-
-sudo reboot
