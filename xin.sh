@@ -1,11 +1,16 @@
 #!/bian/bash
 apt update -y
 echo "APT資源更新成功"
-echo "安裝PPA"
-sudo add-apt-repository ppa:deadsnakes/ppa -y 
-sudo apt-get update -y
-echo "PPA安裝成功"
-sudo apt-get install python3.10 -y
+echo "開始安裝Python3.10"
+sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+cd /tmp
+wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+tar -xf Python-3.10.0.tgz
+cd Python-3.10.0
+./configure --enable-optimizations
+make -j$(nproc)
+sudo make altinstall
+python3.10 --version
 apt install python3-pip -y
 echo "python檔案安裝成功"
 apt install speedtest-cli -y
