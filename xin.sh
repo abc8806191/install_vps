@@ -3,6 +3,8 @@ apt update -y
 echo "APT資源更新成功"
 echo "開始安裝Python"
 apt install python3 -y
+sudo apt install pipx
+pipx ensurepath
 apt install python3-pip -y
 echo "python檔案安裝成功"
 apt install speedtest-cli -y
@@ -15,31 +17,31 @@ echo "====================="
 echo "====================="
 echo "pip3套件開始安裝"
 echo "====================="
-sudo apt install python3-rsa
-sudo apt install python3-thrift==0.11.0
-sudo apt install python3-requests
-sudo apt install python3-pytz
-sudo apt install python3-bs4
-sudo apt install python3-googletrans==4.0.0-rc1
-sudo apt install python3-youtube_dl
-sudo apt install python3-yt_dlp
-sudo apt install python3-pafy
-sudo apt install python3-humanfriendly
-sudo apt install python3-asyncio
-sudo apt install python3-humanize
-sudo apt install python3-paramiko
-sudo apt install python3-hyper
-sudo apt install python3-twder
-sudo apt install python3-html5lib
-sudo apt install python3-httplib2
-sudo apt install python3-null
-sudo apt install python3-python-axolotl-curve25519
-sudo apt install python3-requests_futures
-sudo apt install python3-pycryptodome
-sudo apt install python3-pandas
-sudo apt install python3-qrcode
-sudo apt install python3-image
-sudo apt install python3-matplotlib
+pipx install rsa
+pipx install thrift
+pipx install requests
+pipx install pytz
+pipx install beautifulsoup4
+pipx install googletrans
+pipx install youtube-dl
+pipx install yt-dlp
+pipx install pafy
+pipx install humanfriendly
+pipx install asyncio
+pipx install humanize
+pipx install paramiko
+pipx install hyper
+pipx install twder
+pipx install html5lib
+pipx install httplib2
+pipx install null
+pipx install python-axolotl-curve25519
+pipx install requests-futures
+pipx install pycryptodome
+pipx install pandas
+pipx install qrcode
+pipx install pillow
+pipx install matplotlib
 
 echo "====================="
 echo "pip3套件 安裝完成"
