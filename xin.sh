@@ -45,9 +45,7 @@ echo "====================="
 echo "正在安裝中文化介面"
 echo "====================="
 
-sudo apt-get install language-pack-zh-hant -y
-locale-gen zh_TW.UTF-8
-mv locale /etc/default/
+sudo apt-get install -y language-pack-zh-hans-base
 
 echo "====================="
 echo "中文化界面安裝成功"
