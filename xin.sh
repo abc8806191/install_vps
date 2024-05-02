@@ -8,6 +8,8 @@ echo "python檔案安裝成功"
 apt install speedtest-cli -y
 echo "Speedtest-cli 安裝成功"
 
+python3 -m venv .venv
+source .venv/bin/activate
 
 echo "====================="
 echo "pip3套件開始安裝"
