@@ -1,16 +1,8 @@
 #!/bian/bash
 apt update -y
 echo "APT資源更新成功"
-echo "開始安裝Python3.10"
-sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
-cd /tmp
-wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
-tar -xf Python-3.10.0.tgz
-cd Python-3.10.0
-./configure --enable-optimizations
-make -j$(nproc)
-sudo make altinstall
-python3.10 --version
+echo "開始安裝Python"
+apt install python3 -y
 apt install python3-pip -y
 echo "python檔案安裝成功"
 apt install speedtest-cli -y
@@ -20,31 +12,34 @@ echo "Speedtest-cli 安裝成功"
 echo "====================="
 echo "pip3套件開始安裝"
 echo "====================="
-pip3 install rsa
-pip3 install thrift==0.11.0
-pip3 install requests
-pip3 install pytz
-pip3 install bs4
-pip3 install googletrans==4.0.0-rc1
-pip3 install youtube_dl
-pip3 install yt_dlp
-pip3 install pafy
-pip3 install humanfriendly
-pip3 install asyncio
-pip3 install humanize
-pip3 install paramiko
-pip3 install hyper
-pip3 install twder
-pip3 install html5lib
-pip3 install httplib2
-pip3 install null
-pip3 install python-axolotl-curve25519
-pip3 install requests_futures
-pip3 install pycryptodome
-pip3 install pandas
-pip3 install qrcode
-pip3 install image
-pip3 install matplotlib
+echo "====================="
+echo "pip3套件開始安裝"
+echo "====================="
+sudo apt install python3-rsa
+sudo apt install python3-thrift==0.11.0
+sudo apt install python3-requests
+sudo apt install python3-pytz
+sudo apt install python3-bs4
+sudo apt install python3-googletrans==4.0.0-rc1
+sudo apt install python3-youtube_dl
+sudo apt install python3-yt_dlp
+sudo apt install python3-pafy
+sudo apt install python3-humanfriendly
+sudo apt install python3-asyncio
+sudo apt install python3-humanize
+sudo apt install python3-paramiko
+sudo apt install python3-hyper
+sudo apt install python3-twder
+sudo apt install python3-html5lib
+sudo apt install python3-httplib2
+sudo apt install python3-null
+sudo apt install python3-python-axolotl-curve25519
+sudo apt install python3-requests_futures
+sudo apt install python3-pycryptodome
+sudo apt install python3-pandas
+sudo apt install python3-qrcode
+sudo apt install python3-image
+sudo apt install python3-matplotlib
 
 echo "====================="
 echo "pip3套件 安裝完成"
