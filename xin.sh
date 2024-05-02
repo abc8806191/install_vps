@@ -1,7 +1,11 @@
 #!/bian/bash
 apt update -y
 echo "APT資源更新成功"
-apt install python3 -y
+echo "安裝PPA"
+sudo add-apt-repository ppa:deadsnakes/ppa -y 
+sudo apt-get update -y
+echo "PPA安裝成功"
+sudo apt-get install python3.10 -y
 apt install python3-pip -y
 echo "python檔案安裝成功"
 apt install speedtest-cli -y
