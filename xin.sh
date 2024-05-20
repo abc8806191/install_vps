@@ -4,6 +4,7 @@ echo "APT資源更新成功"
 echo "開始安裝Python"
 apt install python3 -y
 apt install python3-pip -y
+sudo mv /usr/lib/python3.12/EXTERNALLY-MANAGED /usr/lib/python3.12/EXTERNALLY-MANAGED.bk
 echo "python檔案安裝成功"
 apt install speedtest-cli -y
 echo "Speedtest-cli 安裝成功"
