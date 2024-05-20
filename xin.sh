@@ -61,11 +61,11 @@ echo "====================="
 echo "=============================="
 echo "必要修復環境處理中..."
 echo "=============================="
-mv connection.py /usr/local/lib/python3.10/dist-packages/hyper/http11
-mv headers.py /usr/local/lib/python3.10/dist-packages/hyper/common
-mv null.py /usr/local/lib/python3.10/dist-packages/
-mv flags.py /usr/local/lib/python3.10/dist-packages/hyperframe
-mv settings.py /usr/local/lib/python3.10/dist-packages/h2
+mv connection.py /usr/local/lib/python3.12/dist-packages/hyper/http11
+mv headers.py /usr/local/lib/python3.12/dist-packages/hyper/common
+mv null.py /usr/local/lib/python3.12/dist-packages/
+mv flags.py /usr/local/lib/python3.12/dist-packages/hyperframe
+mv settings.py /usr/local/lib/python3.12/dist-packages/h2
 echo "=============================="
 echo "環境修復完畢"
 echo "請自行輸入 sudo reboot 進行重開"
