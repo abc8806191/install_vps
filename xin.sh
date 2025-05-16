@@ -43,19 +43,11 @@ pip3 install pandas
 pip3 install qrcode
 pip3 install pillow
 pip3 install matplotlib
+pip3 install -U h2 httpcore httpx
+pip install -U h2 httpcore httpx
 
 echo "====================="
 echo "pip3套件 安裝完成"
-echo "====================="
-
-echo "====================="
-echo "正在安裝中文化介面"
-echo "====================="
-
-sudo apt-get install -y language-pack-zh-hans-base
-
-echo "====================="
-echo "中文化界面安裝成功"
 echo "====================="
 
 echo "=============================="
